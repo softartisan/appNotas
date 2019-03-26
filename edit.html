@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edit Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <h1>Editar Nota</h1>
+    <div>
+        <span>Titulo</span>
+        <input id="inputTitle" placeholder="Title">
+    </div>
+    <div>
+        <span id="spanEdited"></span>
+    </div>
+    <div>
+        <span>Contenido</span>
+        <textarea id="inputBody" plceholder="Body"></textarea>
+    </div>
+    <div>
+        <button id="buttonRemove">Eliminar Nota</button>
+    </div>
+    
+    <a href="/index.html">Volver</a>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="notesFunctions.js"></script>
+    <script src="notesEdit.js"></script>
+</body>
+</html>

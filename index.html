@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+</head>
+<body>
+    <h1>Notas App</h1>
+    <label for="noteText">Buscar</label>
+    <input type="text" id="noteText" placeholder="">
+    <select id="filterBy">
+        <option value="byEdited">Ordenar por ultimo editado</option>
+        <option value="byCreated">Ordenar por ultimo creado</option>
+        <option value="byAlphabetical">Ordenar alfabeticamente</option>
+    </select>
+    <button id="createNote">Crear Nota</button>
+    <div></div>
+    <script src="uuid.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="notesFunctions.js"></script>
+    <script src="notes-app.js"></script>
+
+    
+    
+</body>
+</html>
