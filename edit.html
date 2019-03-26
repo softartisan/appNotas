@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Edit Note</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <h1>Editar Nota</h1>
-    <div>
-        <span>Titulo</span>
-        <input id="inputTitle" placeholder="Title">
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notas App</h1>
+            <h2 class="header__subtitle">Toma nota y no lo olvides</h2>
+        </div>
     </div>
-    <div>
-        <span id="spanEdited"></span>
-    </div>
-    <div>
-        <span>Contenido</span>
-        <textarea id="inputBody" plceholder="Body"></textarea>
-    </div>
-    <div>
-        <button id="buttonRemove">Eliminar Nota</button>
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+            <a href="/index.html">Inicio</a>
+            <span id="spanEdited"></span>
+        </div>
     </div>
     
-    <a href="/index.html">Volver</a>
+    <div class="container">
+        <input id="inputTitle" placeholder="Titulo" class="title-input">
+        <textarea id="inputBody" class="body-input"></textarea>
+        <button id="buttonRemove" class="button button--secondary">Eliminar Nota</button>
+    </div>
+    
+    
     <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
-    <script src="notesFunctions.js"></script>
-    <script src="notesEdit.js"></script>
+    <script src="/scripts/notesFunctions.js"></script>
+    <script src="/scripts/notesEdit.js"></script>
 </body>
 </html>

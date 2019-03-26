@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Notes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <h1>Notas App</h1>
-    <label for="noteText">Buscar</label>
-    <input type="text" id="noteText" placeholder="">
-    <select id="filterBy">
-        <option value="byEdited">Ordenar por ultimo editado</option>
-        <option value="byCreated">Ordenar por ultimo creado</option>
-        <option value="byAlphabetical">Ordenar alfabeticamente</option>
-    </select>
-    <button id="createNote">Crear Nota</button>
-    <div></div>
-    <script src="uuid.js"></script>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Notas App</h1>
+            <h2 class="header__subtitle">Toma nota y no lo olvides</h2>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" id="noteText" class="input" placeholder="Buscar">
+            <select id="filterBy" class="dropdown">
+                <option value="byEdited">Ordenar por ultimo editado</option>
+                <option value="byCreated">Ordenar por ultimo creado</option>
+                <option value="byAlphabetical">Ordenar alfabeticamente</option>
+            </select>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div id="divNotes"></div>
+        <button id="createNote" class="button">Crear Nota</button>
+    </div>
+    
+    
+
+
+
     <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
-    <script src="notesFunctions.js"></script>
-    <script src="notes-app.js"></script>
+    <script src="/scripts/uuid.js"></script>
+    <script src="/scripts/notesFunctions.js"></script>
+    <script src="/scripts/notes-app.js"></script>
 
     
     
